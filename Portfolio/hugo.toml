@@ -1,4 +1,3 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://mickaumpf.netlify.app/'
 languageCode = 'en-us'
 title = 'Portfolio'
-theme = ["PaperMod"]
