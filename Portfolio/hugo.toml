@@ -1,3 +1,5 @@
 baseURL = 'https://mickaumpf.netlify.app/'
 languageCode = 'en-us'
 title = 'Portfolio'
+enableEmoji = true
+
