@@ -1,7 +1,13 @@
 <html lang="{{ site.Language }}">
-    <body>
-      <main>
-        {{ block "main" . }}{{ end }}
-      </main>
-    </body>
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
 </html>
