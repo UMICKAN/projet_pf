@@ -1,3 +1,9 @@
+:root{
+    --fond: #fff;
+    --texte: #000;
+}
+
+
 h1 {
     color: rgb(25, 0, 255);
 }
