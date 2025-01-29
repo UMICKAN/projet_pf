@@ -37,8 +37,9 @@ body{
     width: 100%;
     background: var(--texte);
 }
-.nav-pricipal ul{
+.side-menu ul {
     list-style-type: none;
+    padding: 0;
 }
 
 /* ⬆ Top header */
