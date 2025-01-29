@@ -9,6 +9,10 @@ body{
     margin: 0;
     background-color: var(--fond);
 }
+h1, h2, h3, p, a, button{
+    font-family: "Rubik", serif;
+}
+
 /******* HEADER ********/
 .header {
     position: fixed;
@@ -20,6 +24,7 @@ body{
 }
 
 /* ⬅ Side MENU */
+/* NAVIGATION */
 .side-menu {
     pointer-events: all;
     height: 100vh;
@@ -31,15 +36,38 @@ body{
     gap: 24px;
     z-index: 1;
     position: relative;
-}
-.logo {
-    height: 100px;
-    width: 100%;
-    background: var(--texte);
-}
-.side-menu ul {
-    list-style-type: none;
-    padding: 0;
+
+    & .logo{
+        height: 60px;
+        width: 100%;
+        background: var(--texte);
+    }
+
+    & nav.nav_principal{
+        & ul {
+            list-style-type: none;
+            padding: 0;
+
+            & li.onglet{
+                padding: 8px 0px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                & .icon{
+                    height: 28px;
+                    width: 28px;
+                    background-color: red;
+                }
+
+                & a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
 
 /* ⬆ Top header */
@@ -53,6 +81,46 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: var(--fond);
+    padding-left: 150px;
+
+    & .inner{
+        width: 100%;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .barre_rs{
+            height: 30px;
+            width: 20%;
+            background: red;
+            position: relative;
+        }
+
+        & .right_button{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            & .ld_mode{
+                height: 30px;
+                width: 30px;
+                border-radius: 20px;
+            }
+
+            & .CTA{
+                display: flex;
+                align-items: center;
+                height: 30px;
+                width: fit-content;
+                padding: 16px 24px;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 /******* MAIN ********/
@@ -61,10 +129,5 @@ main {
     position: relative;
     margin-left: 150px;
     margin-top: 100px;
-    background: #f3e6bf;
     padding: 32px;
-}
-
-h1 {
-    color: rgb(25, 0, 255);
 }
