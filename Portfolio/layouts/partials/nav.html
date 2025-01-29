@@ -1,17 +1,16 @@
 <div class="header">
     <div class="side-menu">
-        <div class="logo">
-            <nav class="nav_principal">
-                <ul>
-                    {{ range .Site.Menus.header }}
-                    <li class="onglet">
-                        <div class="icon"></div>
-                        <a href="{{ .URL }}">{{ .Name }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-            </nav>
-        </div>
+        <div class="logo"></div>
+        <nav class="nav_principal">
+            <ul>
+                {{ range .Site.Menus.header }}
+                <li class="onglet">
+                    <div class="icon"></div>
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
         </div>
         <div class="top_header">
             <div class="barre_rs">

@@ -21,6 +21,15 @@ body{
     width: 150px;
 }
 
+/* Top header */
+.top_header {
+    height: 100px;
+    border: 1px solid;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 /******* MAIN ********/
 main {
     height: 200vh;
