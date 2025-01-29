@@ -1,63 +1,70 @@
 :root{
     --fond: #fff;
-    --text: #000;
+    --texte: #000;
 }
-/*********************/
-/*************** RESET*/
-/*********************/
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
+    background-color: var(--fond);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: inherit;
-    color: inherit;
-    font: inherit;
+/******* HEADER ********/
+.header {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    pointer-events: none;
 }
 
-/*********************/
-/*************** BODY*/
-/*********************/
-main{
-    padding: 0 24px;
-    margin: 0;
-}
-h1 {
-    text-align: center;
-    font-size: 30px;
-    color: red;
-}
-/*************** Header*/
-nav {
+/* ⬅ Side MENU */
+.side-menu {
+    pointer-events: all;
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid;
+    width: 150px;
     display: flex;
-    flex-direction: row;
-    & .logo{
-
-    }
-    ul{
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-
-        & li{
-            
-            & a{
-                text-decoration: none;
-                padding: 0 5px;
-            }
-        }
-    }
+    flex-direction: column;
+    gap: 24px;
+    z-index: 1;
+    position: relative;
+}
+.logo {
+    height: 100px;
+    width: 100%;
+    background: var(--texte);
+}
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/*********************/
-/*************** FOOTER*/
-/*********************/
-footer{
-    padding: 60px 24px;
-    background-color: rgb(211, 211, 211);
+/* ⬆ Top header */
+.top_header {
+    pointer-events: all;
+    height: 100px;
+    border: 1px solid;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-footer p {
-    text-align: center;
+
+/******* MAIN ********/
+main {
+    height: 200vh;
+    position: relative;
+    margin-left: 150px;
+    margin-top: 100px;
+    background: #f3e6bf;
+    padding: 32px;
+}
+
+h1 {
+    color: rgb(25, 0, 255);
 }
