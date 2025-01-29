@@ -1,21 +1,24 @@
-<div class="side-menu">
-    <div class="logo">
-        <nav class="nav_principal">
-            <ul>
-                {{ range .Site.Menus.header }}
-                <li class="onglet">
-                    <div class="icon"></div>
-                    <a href="{{ .URL }}">{{ .Name }}</a>
-                </li>
-                {{ end }}
-            </ul>
-        </nav>
-    </div>
-</div>
-<div class="top_header">
-    <div class="barre_rs"></div>
-    <div class="right_button">
-        <button class="ld_mode"></button>
-        <button class="CTA"></button>
+<div class="header"></div>
+    <div class="side-menu">
+        <div class="logo">
+            <nav class="nav_principal">
+                <ul>
+                    {{ range .Site.Menus.header }}
+                    <li class="onglet">
+                        <div class="icon"></div>
+                        <a href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <div class="top_header">
+            <div class="barre_rs">
+            </div>
+            <div class="right_button">
+                <button class="ld_mode"></button>
+                <button class="CTA"></button>
+        </div>
     </div>
 </div>
