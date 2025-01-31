@@ -97,7 +97,7 @@ h1, h2, h3, p, a, button{
         & .barre_rs{
             height: 30px;
             width: 20%;
-            background: red;
+            background: rgb(0, 60, 255);
             position: relative;
         }
 
@@ -131,6 +131,6 @@ main {
     margin-left: 150px;
     margin-top: 100px;
     padding: 32px;
-    background-image: url(/Portfolio/assets/Images/noise.png);
+    background-image: url('/Portfolio/assets/Images/noise.png');
     background-repeat: repeat;
 }
