@@ -1,14 +1,15 @@
 :root{
-    --fond: #fff;
-    --texte: #000;
-    --border: color-mix(in srgb, var(var(--texte), tranparent)):
+    --C1: #fff;
+    --C2: #000;
+    --border-C1: color-mix(in srgb, var(--C1) 20%, var(--C2));
+    --border-C2: color-mix(in srgb, var(--C2) 20%, var(--C1));
 }
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
-    background-color: var(--fond);
+    background-color: var(--C1);
 }
 h1, h2, h3, p, a, button{
     font-family: "Rubik", serif;
@@ -30,7 +31,7 @@ h1, h2, h3, p, a, button{
     pointer-events: all;
     height: 100vh;
     padding: 20px;
-    border: 1px solid;
+    border: 1px solid var(--border-C2);
     width: 150px;
     display: flex;
     flex-direction: column;
@@ -41,7 +42,7 @@ h1, h2, h3, p, a, button{
     & .logo{
         height: 60px;
         width: 100%;
-        background: var(--texte);
+        background: var(--C2);
     }
 
     & nav.nav_principal{
@@ -50,22 +51,31 @@ h1, h2, h3, p, a, button{
             padding: 0;
 
             & li.onglet{
-                padding: 8px 0px;
                 display: flex;
                 align-items: center;
-                gap: 6px;
-
-                & .icon{
-                    height: 28px;
-                    width: 28px;
-                    background-color: red;
-                }
+                justify-content: center;
 
                 & a{
                     text-decoration: none;
                     font-size: 16px;
                     font-weight: 600;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px 16px;
+
+
+                    & .icon{
+                    height: 28px;
+                    width: 28px;
+                    background-color: red;
+
+                    }
                 }
+
+
+
             }
         }
     }
@@ -75,7 +85,7 @@ h1, h2, h3, p, a, button{
 .top_header {
     pointer-events: all;
     height: 100px;
-    border: 1px solid;
+    border: 1px solid var(--border-C2);
     position: absolute;
     top: 0;
     width: 100%;
@@ -84,7 +94,7 @@ h1, h2, h3, p, a, button{
     justify-content: space-between;
     border-left: 0px;
     border-right: 0px;
-    background-color: var(--fond);
+    background-color: var(--C1);
     padding-left: 150px;
 
     & .inner{
@@ -97,7 +107,7 @@ h1, h2, h3, p, a, button{
         & .barre_rs{
             height: 30px;
             width: 20%;
-            background: rgb(221, 27, 27);
+            background: rgb(245, 169, 169);
             position: relative;
         }
 

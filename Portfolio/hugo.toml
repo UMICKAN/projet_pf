@@ -9,6 +9,14 @@ enableEmoji = true
     url = '/'
     weight = 10
   [[menus.header]]
+    name = 'À propos'
+    url = '/a-propos'
+    weight = 20
+  [[menus.header]]
+    name = 'Projets'
+    url = '/projets'
+    weight = 30
+  [[menus.header]]
     name = 'Contact'
     url = '/contact'
-    weight = 20
+    weight = 40
