@@ -8,14 +8,9 @@
 body{
     margin: 0;
     background-color: var(--fond);
-    background-image: url(/Portfolio/assets/Images/Piscine.jpeg);
 }
 h1, h2, h3, p, a, button{
     font-family: "Rubik", serif;
-}
-
-h1{    
-    background-image: url(/Portfolio/assets/Images/Piscine.jpeg);
 }
 
 /******* HEADER ********/
@@ -135,7 +130,7 @@ main {
     margin-left: 150px;
     margin-top: 100px;
     padding: 32px;
-    background-image: url(/Portfolio/assets/Images/noise.png);
+    background-image: url(../img/noise.png);
     background-repeat: repeat;
 }
 
