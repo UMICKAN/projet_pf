@@ -42,3 +42,17 @@ gsap.from(".sec2 .box", {
     duration : 1,
     stagger : 0.1,
 })
+
+document.getElementById('toggleButton').addEventListener('click', () => {
+  const body = document.body;
+  const header = document.querySelector('.top_header');
+  const isDarkMode = body.classList.toggle('dark-mode');
+  body.classList.toggle('light-mode', !isDarkMode);
+
+  gsap.to([body, header], {
+      backgroundColor: isDarkMode ? 'var(--C2)' : 'var(--C1)',
+      color: isDarkMode ? 'var(--C1)' : 'var(--C2)',
+      borderColor: isDarkMode ? 'var(--border-C2)' : 'var(--border-C1)',
+      duration: 0.3
+  });
+});

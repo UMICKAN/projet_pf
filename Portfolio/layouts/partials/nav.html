@@ -1,11 +1,13 @@
 <div class="header">
-    <div class="side-menu">
+    <div class="side-menu .light-mode">
         <div class="logo"></div>
         <nav class="nav_principal">
             <ul>
                 {{ range .Site.Menus.header }}
                 <li class="onglet">
-                    <a href="{{ .URL }}"><div class="icon"></div>{{ .Name }}</a>
+                    <a href="{{ .URL }}">
+                        <div class="icon"></div>{{ .Name }}
+                    </a>
                 </li>
                 {{ end }}
             </ul>
@@ -16,7 +18,10 @@
                 <div class="barre_rs">
                 </div>
                 <div class="right_button">
-                    <button class="ld_mode"></button>
+                    <button id="toggleButton">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </button>
                     <button class="CTA">Contactez moi</button>
                 </div>
             </div>

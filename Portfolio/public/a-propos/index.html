@@ -1,5 +1,5 @@
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51121&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page à propos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,28 +7,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="light-mode">
   <header>
     <div class="header">
-    <div class="side-menu">
+    <div class="side-menu .light-mode">
         <div class="logo"></div>
         <nav class="nav_principal">
             <ul>
                 
                 <li class="onglet">
-                    <a href="/"><div class="icon"></div>Accueil</a>
+                    <a href="/">
+                        <div class="icon"></div>Accueil
+                    </a>
                 </li>
                 
                 <li class="onglet">
-                    <a href="/a-propos"><div class="icon"></div>À propos</a>
+                    <a href="/a-propos">
+                        <div class="icon"></div>À propos
+                    </a>
                 </li>
                 
                 <li class="onglet">
-                    <a href="/projets"><div class="icon"></div>Projets</a>
+                    <a href="/projets">
+                        <div class="icon"></div>Projets
+                    </a>
                 </li>
                 
                 <li class="onglet">
-                    <a href="/contact"><div class="icon"></div>Contact</a>
+                    <a href="/contact">
+                        <div class="icon"></div>Contact
+                    </a>
                 </li>
                 
             </ul>
@@ -39,7 +47,10 @@
                 <div class="barre_rs">
                 </div>
                 <div class="right_button">
-                    <button class="ld_mode"></button>
+                    <button id="toggleButton">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </button>
                     <button class="CTA">Contactez moi</button>
                 </div>
             </div>
@@ -65,5 +76,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="/js/script.js"></script>
 </html>
