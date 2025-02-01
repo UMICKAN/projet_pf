@@ -133,8 +133,9 @@ h1, h2, h3, p, a, button{
         }
     }
 }
-
-/******* MAIN ********/
+/*****************************************************/
+/*************************************** MAIN ********/
+/*****************************************************/
 /* texture */
 .noise {
     position: fixed;
@@ -162,3 +163,52 @@ main {
 main p{
     font-size: 24px;
 }
+
+/*****************************************************/
+/*************************************** FOOTER ********/
+/*****************************************************/
+footer {
+    position: relative;
+    margin-left: 150px;
+    padding: 32px;
+    background-color: var(--C2);
+}
+footer p{
+    color: var(--C1);
+}
+
+
+
+/*test*/
+.sec1 .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #393943;
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  .box {
+    background-color: white;
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+  }
+  
+  .box1 {
+    background-color: #f1c40f;
+  }
+  
+  .box2 {
+    background-color: #e74c3c;
+  }
