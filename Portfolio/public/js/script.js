@@ -46,13 +46,18 @@ gsap.from(".sec2 .box", {
 document.getElementById('toggleButton').addEventListener('click', () => {
   const body = document.body;
   const header = document.querySelector('.top_header');
+  const sideMenu = document.querySelector('.side-menu');
   const isDarkMode = body.classList.toggle('dark-mode');
   body.classList.toggle('light-mode', !isDarkMode);
+  header.classList.toggle('dark-mode', isDarkMode);
+  header.classList.toggle('light-mode', !isDarkMode);
+  sideMenu.classList.toggle('dark-mode', isDarkMode);
+  sideMenu.classList.toggle('light-mode', !isDarkMode);
 
   gsap.to([body, header], {
       backgroundColor: isDarkMode ? 'var(--C2)' : 'var(--C1)',
       color: isDarkMode ? 'var(--C1)' : 'var(--C2)',
-      borderColor: isDarkMode ? 'var(--border-C2)' : 'var(--border-C1)',
+      borderColor: isDarkMode ? 'var(--border-C1)' : 'var(--border-C2)',
       duration: 0.3
   });
 });

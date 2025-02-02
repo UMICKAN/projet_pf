@@ -1,9 +1,10 @@
 :root{
     --C1: #fff;
     --C2: #1e1f2b;
-    --border-C1: color-mix(in srgb, var(--C1) 80%, var(--C2));
-    --border-C2: color-mix(in srgb, var(--C2) 80%, var(--C1));
+    --border-C1: color-mix(in srgb, var(--C1) 20%, var(--C2));
+    --border-C2: color-mix(in srgb, var(--C2) 20%, var(--C1));
 }
+
 *{
     box-sizing: border-box;
 }
@@ -17,7 +18,7 @@ h1, h2, h3, p, a, button{
 
 /* test IA light/dark mode*/
 
-body, .top_header {
+body, .top_header, .side-menu {
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -63,7 +64,7 @@ body.dark-mode .icon.moon {
     pointer-events: all;
     height: 100vh;
     padding: 20px;
-    border: 1px solid var(--border-C2);
+    border: 1px solid;
     border-top: 0px;
     width: 150px;
     display: flex;
@@ -71,6 +72,7 @@ body.dark-mode .icon.moon {
     gap: 24px;
     z-index: 1;
     position: relative;
+
 
     & .logo{
         height: 60px;
