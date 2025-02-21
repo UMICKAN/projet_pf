@@ -1,9 +1,21 @@
 :root{
     --C1: #f8f8f5;
     --C2: #050505;
-    --border-C1: color-mix(in srgb, var(--C1) 20%, var(--C2));
-    --border-C2: color-mix(in srgb, var(--C2) 20%, var(--C1));
-    --border: color-mix(in srgb, #777777 30%, transparent);
+    --font: "Lexend", serif;
+    --asset-dot: radial-gradient(var(--color-fg)1px,transparent 0);
+    --color-asset: color-mix(in srgb, var(--color-bg) 80%, var(--color-fg));
+}
+
+[data-theme="light"] {
+    --color-bg: #f8f8f5;
+    --color-fg: #050505;
+    --border-light: color-mix(in srgb, var(--color-bg) 80%, var(--color-fg));
+}
+  
+[data-theme="dark"] {
+    --color-bg: #050505;
+    --color-fg: #f8f8f5;
+    --border-light: color-mix(in srgb, var(--color-bg) 80%, var(--color-fg))
 }
 
 *{
@@ -11,16 +23,29 @@
 }
 body{
     margin: 0;
-    background-color: var(--C1);
+    background-color: var(--color-bg);
+    color: var(--color-fg);
 }
-h1, h2, h3, p, a, button{
-    font-family: "Rubik", serif;
+h1, h2, h3, p, a{
+    font-family: var(--font);
     margin: 0;
+    color: var(--color-fg);
+}
+button{
+    font-family: var(--font);
+    background: var(--color-fg);
+    color: var(--color-bg);
+    border: solid 0px;
+}
+
+#toggleButton {
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 /* test IA light/dark mode*/
 
-body, .top_header, .side-menu {
+/* body, .top_header, .side-menu {
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -34,11 +59,6 @@ body.dark-mode, .dark-mode .top_header {
     color: var(--C1);
 }
 
-#toggleButton {
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
 .icon  {
     display: none;
 }
@@ -49,7 +69,7 @@ body.light-mode .icon.sun {
 
 body.dark-mode .icon.moon {
     display: inline;
-}
+} */
 /******* HEADER ********/
 .header {
     position: fixed;
@@ -66,7 +86,7 @@ body.dark-mode .icon.moon {
     pointer-events: all;
     height: 100vh;
     padding: 20px;
-    border-right: 1px solid var(--border);
+    border-right: 1px solid var(--border-light);
     border-top: 0px;
     width: 150px;
     display: flex;
@@ -120,27 +140,18 @@ body.dark-mode .icon.moon {
 }
 
 /* ⬆ Top header */
-.top_header.light-mode {
-    background-color: var(--C1);
-    color: var(--C2);
-}
-.top_header.dark-mode {
-    background-color: var(--C2);
-    color: var(--C1);
-}
-
 
 .top_header {
     pointer-events: all;
     height: 100px;
-    border-bottom: 1px solid var(--border-C2);
+    border-bottom: 1px solid var(--border-light);
     position: absolute;
     top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--C1);
+    background-color: var(--color-bg);
     padding-left: 150px;
 
     & .inner{
@@ -185,16 +196,15 @@ body.dark-mode .icon.moon {
 .title{
     font-size: 10em;
     font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: -10px;
+    letter-spacing: -8px;
     line-height: 0.8em;
 }
 .surtitle {
     padding: 6px 12px;
-    background: var(--C2);
+    background: var(--color-fg);
     border-radius: 4px;
     width: fit-content;
-    color: var(--C1);
+    color: var(--color-bg);
 }
 
 
@@ -207,10 +217,8 @@ body.dark-mode .icon.moon {
     inset: 0;
     width: 100%;
     height: 100vh;
-    height: 100svh;
-    height: 100dvh;
     z-index: calc(infinity);
-    opacity: .2;
+    opacity: .4;
     background-image: url(../img/noise.png);
     background-repeat: repeat;
     mix-blend-mode: multiply;
@@ -225,7 +233,11 @@ main {
 }
 section{
     padding: 32px;
-    border-bottom: 1px solid var(--border) ;
+    border-bottom: 1px solid var(--border-light) ;
+}
+section.sec_hero{
+    background-image: radial-gradient(var(--color-asset) 1px, transparent 0);
+    background-size: 5px 5px !important;
 }
 
 main p{
