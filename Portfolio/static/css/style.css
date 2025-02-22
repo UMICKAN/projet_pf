@@ -238,6 +238,11 @@ button{
 /*************************************** SEC_PROJET ********/
 /*****************************************************/
 
+section.sec_projet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .col-cards{
 
     & .card{
@@ -260,12 +265,15 @@ button{
         }
 
         & .row_etiquette{
+            padding-top : 8px;
 
             & .etiquette{
                 font-size: 14px;
-                padding: 4px 6px;
+                font-weight: 200;
+                padding: 4px 8px;
                 border-radius: 50px;
                 border: 1px solid var(--border-light);
+                display: inline-block;
             }
         }
     }
@@ -303,7 +311,7 @@ section.sec_hero{
     background-size: 5px 5px !important;
 }
 
-main p{
+.sec_hero p{
     font-size: 24px;
 }
 
