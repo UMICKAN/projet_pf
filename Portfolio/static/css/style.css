@@ -238,12 +238,6 @@ button{
 /*************************************** SEC_PROJET ********/
 /*****************************************************/
 
-.sec_projet img{
-    height: 300px;
-    width: 100%;
-    background: gray;
-}
-
 .contain.col-cards{
 
     & .card{
@@ -254,7 +248,7 @@ button{
         & img{
             height: 300px;
             width: 100%;
-            background: gray;
+            background: rgb(255, 0, 0);
             border-radius: 4px;
         }
 
