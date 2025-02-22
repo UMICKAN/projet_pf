@@ -266,6 +266,9 @@ section.sec_projet {
 
         & .row_etiquette{
             padding-top : 8px;
+            display: flex;
+            justify-content: end;
+            gap: 8px;
 
             & .etiquette{
                 font-size: 14px;
