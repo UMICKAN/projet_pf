@@ -240,7 +240,14 @@ button{
 
 section.sec_projet {
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+}
+
+.contain.col-cards {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
 
 .col-cards{
