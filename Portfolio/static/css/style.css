@@ -80,7 +80,7 @@ body{
     cursor: crosshair;
     font-size: 16px;
 }
-h1, h2, h3, p, a{
+h1, h2, h3, p, span, a{
     font-family: var(--font);
     color: var(--color-fg);
 
@@ -96,34 +96,6 @@ button{
     padding: 10px 20px;
     cursor: pointer;
 }
-
-/* test IA light/dark mode*/
-
-/* body, .top_header, .side-menu {
-    transition: background-color 0.3s, color 0.3s;
-}
-
-body.light-mode, .light-mode .top_header {
-    background-color: var(--C1);
-    color: var(--C2);
-}
-
-body.dark-mode, .dark-mode .top_header {
-    background-color: var(--C2);
-    color: var(--C1);
-}
-
-.icon  {
-    display: none;
-}
-
-body.light-mode .icon.sun {
-    display: inline;
-}
-
-body.dark-mode .icon.moon {
-    display: inline;
-} */
 /******* HEADER ********/
 .header {
     position: fixed;
@@ -270,6 +242,39 @@ body.dark-mode .icon.moon {
     height: 300px;
     width: 100%;
     background: gray;
+}
+
+.contain.col-cards{
+
+    & .card{
+        padding: 16px;
+        border-radius: 4px;
+        border: 1px solid var(--border-light);
+
+        & img{
+            height: 300px;
+            width: 100%;
+            background: gray;
+            border-radius: 4px;
+        }
+
+        & .card-title {
+            display: flex;
+            gap: 8px;
+            padding: 8px 0px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        & .row_etiquette{
+
+            & .etiquette{
+                font-size: 14px;
+                padding: 4px 6px;
+                border-radius: 50px;
+                border: 1px solid var(--border-light);
+            }
+        }
+    }
 }
 
 /*****************************************************/
