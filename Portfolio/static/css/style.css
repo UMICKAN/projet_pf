@@ -332,10 +332,10 @@ footer {
     position: relative;
     margin-left: 150px;
     padding: 32px;
-    background-color: var(--C2);
+    background-color: var(--color-fg);
 }
 footer p{
-    color: var(--C1);
+    color: var(--color-bg);
 }
 
 
