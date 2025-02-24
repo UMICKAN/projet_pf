@@ -135,42 +135,6 @@ button, button.CTA{
         width: 100%;
         background: red;
     }
-
-    & nav.nav_principal{
-        & ul {
-            list-style-type: none;
-            padding: 0;
-
-            & li.onglet{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                & a{
-                    text-decoration: none;
-                    font-size: 16px;
-                    font-weight: 600;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 8px;
-                    padding: 8px 16px;
-
-
-                    & .icon{
-                        display: block;
-                        height: 28px;
-                        width: 28px;
-                        background-color: red;
-
-                    }
-                }
-
-
-
-            }
-        }
-    }
 }
 
 /* ⬆ Top header */
