@@ -1,8 +1,8 @@
+/***************** Bonne Version css ****************/
 :root{
     --C1: #f8f8f5;
     --C2: #050505;
     --font: "Lexend", serif;
-    --asset-dot: radial-gradient(var(--color-fg)1px,transparent 0);
     --color-asset: color-mix(in srgb, var(--color-bg) 80%, var(--color-fg));
 }
 
@@ -16,7 +16,7 @@
     --color-bg: #050505;
     --color-fg: #f8f8f5;
     --border-light: color-mix(in srgb, var(--color-bg) 80%, var(--color-fg))
-}
+} 
 /*********************************/
 /*************** RESET */
 /*********************************/
@@ -412,4 +412,4 @@ footer p{
   
   .box2 {
     background-color: #3c6ae7;
-  }
+  } 
