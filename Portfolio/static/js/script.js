@@ -11,7 +11,7 @@ gsap.to(box1, {
     toggleActions: "restart reverse play reverse",
     start: "top 40%",
     end: "bottom 30%",
-    markers: true,
+    markers: false,
     scrub: 1
   }
 });
