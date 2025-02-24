@@ -1,22 +1,20 @@
 <div class="header">
     <div class="side-menu">
         <div class="logo"></div>
-        <nav class="nav_principal">
-            <ul>
-                {{ range .Site.Menus.header }}
-                <li class="onglet">
-                    <a href="{{ .URL }}">
-                        <div class="icon"></div>{{ .Name }}
-                    </a>
-                </li>
-                {{ end }}
-            </ul>
-        </nav>
         </div>
         <div class="top_header">
             <div class="inner">
-                <div class="barre_rs">
-                </div>
+                <nav class="nav_principal">
+                    <ul>
+                        {{ range .Site.Menus.header }}
+                        <li class="onglet">
+                            <a href="{{ .URL }}">
+                                <div class="icon"></div>{{ .Name }}
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </nav>
                 <div class="right_button">
                     <button id="toggleButton" type="button" data-theme-toggle aria-label="Change to light theme"> Color Mode
                     </button>
