@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page d&#39;accueil on Portfolio</title>
-    <link>http://localhost:59517/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Page d&#39;accueil on Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:59517/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Page à propos</title>
-      <link>http://localhost:59517/a-propos/</link>
+      <link>http://localhost:1313/a-propos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59517/a-propos/</guid>
+      <guid>http://localhost:1313/a-propos/</guid>
       <description>&lt;h1 id=&#34;discutons-de-moi&#34;&gt;Discutons de moi&lt;/h1&gt;&#xA;&lt;p&gt;Je suis &amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Page d&#39;accueil</title>
-      <link>http://localhost:59517/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59517/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>&lt;h1 id=&#34;discutons-ensemble-smile&#34;&gt;Discutons ensemble &amp;#x1f604;&lt;/h1&gt;&#xA;&lt;p&gt;Je suis à votre écoute pour réaliser votre projet !&lt;/p&gt;</description>
     </item>
     <item>
       <title>Page projets</title>
-      <link>http://localhost:59517/projets/</link>
+      <link>http://localhost:1313/projets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:59517/projets/</guid>
+      <guid>http://localhost:1313/projets/</guid>
       <description>&lt;h1 id=&#34;discutons-de-mes-projets&#34;&gt;Discutons de mes projets&lt;/h1&gt;&#xA;&lt;p&gt;Je fais &amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>

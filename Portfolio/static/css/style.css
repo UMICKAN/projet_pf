@@ -88,12 +88,12 @@ h1, h2, h3, p, span, a{
 p, span{
     line-height: 1.5;
 }
-section{
+section{ 
     z-index: 1;
     position: relative;
     background: var(--color-bg);
     padding: 32px;
-    border-bottom: 1px solid var(--border-light) ;
+    border-top: 1px solid var(--border-light) ;
 }
 
 
@@ -278,7 +278,7 @@ section.sec_bandeau {
     overflow: hidden; 
 }
 
-section.sec_bandeau img {
+section svg { 
     height: 23px !important;
 }
 
