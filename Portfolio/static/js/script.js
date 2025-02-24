@@ -43,21 +43,6 @@ gsap.from(".sec2 .box", {
     stagger : 0.1,
 })
 
-// document.getElementById('toggleButton').addEventListener('click', () => {
-//   const body = document.body;
-//   const header = document.querySelector('.top_header');
-//   const isDarkMode = body.classList.toggle('dark-mode');
-//   body.classList.toggle('light-mode', !isDarkMode);
-//   header.classList.toggle('dark-mode', isDarkMode);
-//   header.classList.toggle('light-mode', !isDarkMode);
-
-//   gsap.to([body, header], {
-//       backgroundColor: isDarkMode ? 'var(--C2)' : 'var(--C1)',
-//       color: isDarkMode ? 'var(--C1)' : 'var(--C2)',
-//       duration: 0.3
-//   });
-// });
-
 /**
 * Utility function to calculate the current theme setting.
 * Look for a local storage value.
@@ -80,7 +65,7 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
 * Utility function to update the button text and aria-label.
 */
 function updateButton({ buttonEl, isDark }) {
-  const newCta = isDark ? "Change to light theme" : "Change to dark theme";
+  const newCta = isDark ? "light" : "dark";
   // use an aria-label if you are omitting text on the button
   // and using a sun/moon icon, for example
   buttonEl.setAttribute("aria-label", newCta);
