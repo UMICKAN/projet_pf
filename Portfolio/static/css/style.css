@@ -20,21 +20,27 @@
     --border-light: color-mix(in srgb, var(--color-bg) 80%, var(--color-fg))
 } 
 
-.icon {
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    top: 0;
+div#hover-area {
+    height: 100%;
+    width: 100%;
+    position: absolute;
     left: 0;
-    pointer-events: none;
+    top: 0;
+    display: flex
+;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+a.flair.m-5 {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background: #62ff00;
     border-radius: 100%;
-    background: red;
-    /* background: var(--color-fg);
-    border-radius: 100%;
-    background-color: currentColor;
-    color: var(--color-bg);
-    mix-blend-mode: exclusion; */
-  }
+    filter: blur(430px);
+    z-index: 10;
+}
 
 
 /*********************************/
@@ -163,6 +169,7 @@ button, button.CTA{
     height: 100vh;
     padding: 20px;
     border-right: 1px solid var(--border-light);
+    background: var(--color-bg);
     border-top: 0px;
     width: 100px;
     display: flex;
