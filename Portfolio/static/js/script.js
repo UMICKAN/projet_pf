@@ -117,8 +117,8 @@ button.addEventListener("click", (event) => {
 
 
 let hoverArea = document.querySelector(".hover-area");
-let xTo = gsap.quickTo(".icon", "x", { ease: "power3" });
-let yTo = gsap.quickTo(".icon", "y", { ease: "power3" });
+let xTo = gsap.quickTo(".flair", "x", { ease: "power3" });
+let yTo = gsap.quickTo(".flair", "y", { ease: "power3" });
 
 function onMove(e) {
   let boundingRect = hoverArea.getBoundingClientRect();
