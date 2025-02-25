@@ -26,9 +26,8 @@ div#hover-area {
     position: absolute;
     left: 0;
     top: 0;
-    display: flex
-;
-    align-items: flex-end;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -36,10 +35,9 @@ a.flair.m-5 {
     position: absolute;
     height: 500px;
     width: 500px;
-    background: #62ff00;
+    background: #ffb100;
     border-radius: 100%;
-    filter: blur(430px);
-    z-index: 10;
+    filter: blur(200px);
 }
 
 
@@ -267,7 +265,9 @@ section.sec_hero {
     position: sticky;
     top: 100px;
 }
-
+section.sec_hero .contain{
+    position: relative;
+}
 .sec_hero p.title {
     font-size: 150px;
     font-weight: 800;
@@ -284,6 +284,7 @@ section.sec_hero {
 .sec_hero .inner-contain {
     margin-top: 200px;
     width: 50%;
+    position: relative;
 }
 section.sec_hero .inner-button {
     padding-top: 16px;
