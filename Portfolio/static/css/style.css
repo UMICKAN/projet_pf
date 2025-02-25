@@ -20,7 +20,7 @@
     --border-light: color-mix(in srgb, var(--color-bg) 80%, var(--color-fg))
 } 
 
-.flair {
+.icon {
     width: 100px;
     height: 100px;
     position: fixed;
