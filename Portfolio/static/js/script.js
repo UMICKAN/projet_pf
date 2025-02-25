@@ -116,15 +116,22 @@ button.addEventListener("click", (event) => {
 }); 
 
 
-// requires GSAP 3.10.0 or later
-// older quickSetter version: https://codepen.io/GreenSock/pen/WNNNBpo
+let hoverArea = document.querySelector(".hover-area");
+let xTo = gsap.quickTo(".flair", "x", { ease: "power3" });
+let yTo = gsap.quickTo(".flair", "y", { ease: "power3" });
 
-gsap.set(".flair", {xPercent: -50, yPercent: -50});
+function onMove(e) {
+  let boundingRect = hoverArea.getBoundingClientRect();
+  let relX = e.pageX - boundingRect.left;
+  let relY = e.pageY - boundingRect.top;
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+  let x = relX - boundingRect.width / 2;
+  let y = relY - boundingRect.height / 2 - scrollTop;
+  xTo(x);
+  yTo(y);
+}
 
-let xTo = gsap.quickTo(".flair", "x", {duration: 0.6, ease: "power3"}),
-    yTo = gsap.quickTo(".flair", "y", {duration: 0.6, ease: "power3"});
-
-window.addEventListener("mousemove", e => {
-  xTo(e.clientX);
-  yTo(e.clientY);
-});
+function onLeave(e) {
+  xTo(0);
+  yTo(0);
+}
